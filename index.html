@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            line-height: 1.5em;
+        }
+
+        .main {
+            margin: 0 0 100px;
+            height: 100vh;
+
+        }
+
+        #header {
+            background: black;
+            font-family: arial;
+            height: 100px;
+        }
+
+        #headertxt {
+            font-family: arial;
+            font-size: 40px;
+            line-height: 100%;
+            color: black;
+            margin-top: 20px; 
+        }
+
+        #headertxt2 {
+            font-family: arial;
+            font-size: 20px;
+            line-height: 100%;
+            color: black;
+            margin-top: 20px; 
+        }
+
+        #contentwrapper {
+            float: left;
+            width: 100%;
+            padding: 0px;
+
+        }
+
+        #contentcolumn {
+            margin: 0 230px;
+            align-items: center;
+        }
+
+        #leftcolumn {
+            float: left;
+            width: 230px;
+            margin-left: -100%;
+            background: #24c8ff;
+        }
+
+        #rightcolumn {
+            float: right;
+            width: 230px;
+            margin-left: -230px;
+            background: #ebedb2;
+        }
+
+        .innertext {
+            margin: 20px;
+            font-family: arial;
+            color: #5E5E5E;
+            text-align: justify;
+        }
+
+        .innertext2 {
+            margin: 20px;
+            font-family: arial;
+            font-size: medium;
+            color: #ffffff;
+            text-align: justify;
+        }
+
+        .txt:hover {
+            color: cyan;
+        }
+
+        img {
+            float: left;
+            width: 100%;
+            margin: 20px 20px 20px 20px;
+        }
+
+        footer {
+            clear: both;
+            /*cannot float on left */
+            width: 100%;
+            background: black;
+            color: #FFF;
+            font-family: arial;
+            text-align: center;
+            padding: 4px;
+            margin-top: 100px;
+
+        }
+
+        /* ### Navigation ### */
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+        }
+
+        li {
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+
+
+
+        li:last-child {
+            border-right: none;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        a:hover:not (.active) {
+            background-color: #808080;
+        }
+
+        .active {
+            background-color: #0099ff;
+        }
+
+        #contentspace {
+            width: 100%;
+            height: 300px;
+        }
+
+
+		/* unvisited link */
+		a:link {
+			color: rgb(5, 255, 213);
+			text-decoration: none;
+			
+		}
+
+		/* visited link */
+		a:visited {
+			color: #5fa4ff;
+		}
+
+		/* mouse over link */
+		a:hover {
+			color: rgb(0, 66, 128);
+			text-decoration: underline;
+			background-color: rgb(255, 255, 162);
+		}
+
+		/* selected link */
+		a:active {
+			color: blue;
+		}
+
+        /* #### Responsive Layout CSS #### */
+        @media (max-width: 840px) {
+            /* Drop right column Down */
+
+            #leftcolumn {
+                margin-left: -100%;
+                display: none; /* Hide left column */
+
+
+            }
+
+
+    #rightcolumn {
+        width: 100%;
+        margin-left: 0;
+        clear: both;
+        margin-bottom: 20px; /* Add space between #rightcolumn and footer */
+    }
+
+        #contentcolumn {
+                width: 100%;
+                margin-right: 0px;
+                margin-left: 0px;
+                /*set margin to leftcolumnwidth */
+            }
+    footer {
+        clear: both; /* Ensure footer appears below all content */
+    }
+}
+            
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <div id="container">
+            <div id="header">
+                <ul style="display:inline">
+                    <li><a class="active" href="#Home">Home</a> </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="contentwrapper">
+            <div id="contentcolumn">
+                <div id="headertxt" align="center">IMPORTANCE OF MENTAL HEALTH</div>
+                <div class="innertext">
+                    <img src="/img/mentalhealth.png" alt="mental health female">
+                    <P>
+
+
+                        Mental health is foundational to overall well-being, influencing all aspects of life, from
+                        personal
+                        relationships to work performance and physical health. A strong mental state enhances quality of
+                        life, enabling individuals to handle stress, build resilience, and find fulfillment in daily
+                        activities. With good mental health, people are more adaptable and equipped to overcome
+                        challenges,
+                        fostering a positive outlook and healthier coping mechanisms.
+
+                        Furthermore, mental health is closely linked to physical health, as it affects immune function
+                        and
+                        reduces risks for conditions like heart disease and diabetes. Mentally healthy individuals often
+                        exhibit greater focus, productivity, and cognitive clarity, making them more effective in both
+                        personal and professional spheres. In the long term, prioritizing mental well-being helps
+                        prevent
+                        chronic mental health issues, including anxiety and depression, ensuring a more stable and
+                        balanced
+                        emotional state.
+
+                        Healthy mental states also support stronger relationships, enhancing empathy, communication, and
+                        social connections. On a larger scale, mental wellness contributes to societal well-being;
+                        individuals with positive mental health are more active in their communities, fostering
+                        supportive,
+                        resilient environments. Emotional stability, promoted by good mental health, enables better mood
+                        regulation, reducing irritability and anxiety.
+
+                        Prioritizing mental health through self-care, support systems, and healthy habits is essential
+                        for a
+                        balanced, fulfilling life, impacting not just individuals but entire communities and societies
+                        for
+                        the better.</P>
+
+
+                </div>
+
+            </div>
+        </div>
+        <div id="leftcolumn">
+            <div class="innertext2 txt:hover">
+                <p>Health Connection</p>
+                <p>Resilience</p>
+                <p>Workplace Mental Health</p>
+                <p>Youth and Adolescents</p>
+                <p>Substance Use</p>
+                <p>Relationships</p>
+                <p>Suicide Prevention</p>
+                <p>Wellness Practices</p>
+                <p>Minority Communities</p>
+            </div>
+        </div>
+
+        <div id="rightcolumn">
+            <div class="innertext">
+                <div id="headertxt2">Think About This</div>
+                <p>Emotion Stability</p>
+                <p>Physical health</p>
+                <p>Productivity</p>
+                <p>Happiness</p>
+                <p>fulfillment</p>
+            </div>
+        </div>
+        <div id="contentspace"></div>
+    </div>
+
+
+    <footer>
+        <p>
+            <font face="arial" size="7"><strong>CareHub</strong></font>
+        </p>
+        <p a id="contact">Contact: +2348104492314<br>
+            Email: adeoluleigha@gmail.com
+        </p>
+    </footer>
+
+
+</body>
+
+</html>
